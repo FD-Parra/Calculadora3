@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Círculo</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="circulo.css">
+    <script src="js/circulo.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Calculadora de Círculo</h1>
+        <a href="index.html" class="volver">Volver al Menú</a>
+    </header>
+    <main class="calculadora-container">
+        <div class="input-group">
+            <label for="radio">Radio (r):</label>
+            <input type="number" id="radio" placeholder="Ingrese el radio" required>
+            <p class="error-message" id="radio-error"></p>
+        </div>
+        <button onclick="calcularCirculo()">Calcular</button>
+        <div id="resultado" class="resultado">
+            </div>
+    </main>
+</body>
+</html>

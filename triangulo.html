@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Triángulo</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/triangulo.css">
+    <script src="js/triangulo.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Calculadora de Triángulo</h1>
+        <a href="index.html" class="volver">Volver al Menú</a>
+    </header>
+    <main class="calculadora-container">
+        <p>Para calcular el área, ingresa la base y la altura.</p>
+        <p>Para calcular el perímetro, ingresa los tres lados.</p>
+        <div class="input-group">
+            <label for="base">Base (b):</label>
+            <input type="number" id="base" placeholder="Ingrese la base">
+            <p class="error-message" id="base-error"></p>
+        </div>
+        <div class="input-group">
+            <label for="altura">Altura (h):</label>
+            <input type="number" id="altura" placeholder="Ingrese la altura">
+            <p class="error-message" id="altura-error"></p>
+        </div>
+        <div class="input-group">
+            <label for="lado1">Lado 1 (a):</label>
+            <input type="number" id="lado1" placeholder="Ingrese el lado 1">
+            <p class="error-message" id="lado1-error"></p>
+        </div>
+        <div class="input-group">
+            <label for="lado2">Lado 2 (b):</label>
+            <input type="number" id="lado2" placeholder="Ingrese el lado 2">
+            <p class="error-message" id="lado2-error"></p>
+        </div>
+        <div class="input-group">
+            <label for="lado3">Lado 3 (c):</label>
+            <input type="number" id="lado3" placeholder="Ingrese el lado 3">
+            <p class="error-message" id="lado3-error"></p>
+        </div>
+        <button onclick="calcularTriangulo()">Calcular</button>
+        <div id="resultado" class="resultado">
+            </div>
+    </main>
+</body>
+</html>
